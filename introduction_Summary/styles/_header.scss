@@ -1,0 +1,45 @@
+//@mixin flexCenter { this line is within paramether
+@mixin flexCenter($direction, $background ) {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:$direction ;
+    background: $background;
+
+}
+
+header {
+    /*
+we can create a function anywhere in the code and call it
+*/
+
+    @include flexCenter(column,yellow);
+
+   
+    height: 100vh;
+
+    color: $textColor;
+
+    button {
+        background: $primaryBtn;
+
+        // &:hover{
+        //     background:  rgba(154, 90, 182, 0.993);
+        // }
+        &::after {
+            content: "This After";
+        }
+    }
+
+}
+//---------------- HERENCE ---------------
+
+.herencia {
+    height: 50vh;
+    background: rgb(219, 219, 177);
+    color: rgb(153, 18, 158);
+    font-size: 4vh;
+
+}

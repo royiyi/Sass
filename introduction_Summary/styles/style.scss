@@ -1,0 +1,31 @@
+ @import "./variables";
+@import "./header";
+// header button{
+//  background:$primaryBtn ;   
+
+// }
+
+
+.contact  {
+   @include flexCenter(row,rgb(0, 89, 255));
+    //background: $primaryBtn;
+    color: yellow;
+
+}
+//------------    @extend   -------------
+.receiving_inheritance{
+    
+    //here we can to watch that herneced all features of this class but also we can override some propetties
+    @extend .herencia;
+    
+    font-size: 12px;
+
+    background: rgb(149, 247, 209);
+
+    //********     Also Do Calculations ********
+  
+    //      ( + )  ( / ) ( * ) ( - ) EXAMPLE
+
+    width: 100% - 20%;
+
+}
